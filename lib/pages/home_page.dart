@@ -229,7 +229,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 SizedBox(
-                  height: height * .392,
+                  height: height * .292,
                   child: FutureBuilder(
                       future: _service.fetchMovieAccordingFilter(filter),
                       builder: (BuildContext context, snapshot) {

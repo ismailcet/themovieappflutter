@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:themovieapp/pages/splash_page.dart';
+import 'package:themovieapp/provider/watchlist_provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+      create: (context) => WatchlistProvider(), child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
